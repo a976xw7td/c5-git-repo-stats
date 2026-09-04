@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-repo-stats"
+version = "0.1.0"
+description = "CLI 洞察任意 Git 仓库：提交、贡献者、分支、文件结构一屏掌握"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Zhang Hao", email = "a976xw7td@users.noreply.github.com" }]
+keywords = ["git", "repository", "stats", "cli", "insight"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dependencies = []
+
+[project.scripts]
+git-repo-stats = "git_repo_stats.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/a976xw7td/c5-git-repo-stats"
+Repository = "https://github.com/a976xw7td/c5-git-repo-stats"
+Issues = "https://github.com/a976xw7td/c5-git-repo-stats/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
